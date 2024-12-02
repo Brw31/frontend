@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<style>
+
+    textarea{
+        resize:none;
+}
+</style>
+
+<body>
+    <h1 class="bg-success p-3 text-center text-white">Meu Portifólio</h1>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div class="mt-4">
+                    <label for="exampleFormControlTextarea1" class="form-label">Pergunte algo de seu interesse:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite aqui..." rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="check-box mt-4">
+            <select class="form-select" aria-label="check-box">
+                <option selected>Selecione a habilidade desejada:</option>
+                <option value="1">Front-End Developer</option>
+                <option value="2">Python</option>
+                <option value="3">Java</option>
+                <option value="4">Banco de Dados</option>
+              </select>
+        </div>
+
+        <div class="satisfacao mt-5">
+            <label for="customRange2" class="form-label"><p>Em uma escala de 0 a 10 quão satisfeito você ficou com meu perfil.</p></label>
+            <span id="satisfacao1"><br>0</span>
+            <input type="range" class="form-range" min="1" max="10" id="satisfacao1">
+        </div>
+
+        <div class="fim">
+            <p>Você recomendaria meu portifólio?</p>
+            <div class="form-check mt-4">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Sim
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Não
+                </label>
+              </div>
+        </div>
+
+        <div class="col text-center">
+            <button class="btn btn-success text-center"> Enviar Formulário</button>
+        </div>
+    </div>
+</body>
+</html>
